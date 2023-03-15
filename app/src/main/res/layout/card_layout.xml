@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="#76D8CF"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="1dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            />
+
+        <TextView
+            android:id="@+id/descriptionTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_gray"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_below="@+id/titleTv"
+
+            />
+        <TextView
+            android:id="@+id/descriptionTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_gray"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_below="@+id/descriptionTv1"
+
+            />
+        <TextView
+            android:id="@+id/descriptionTv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_gray"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_below="@+id/descriptionTv2"
+
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
