@@ -8,14 +8,9 @@
         android:icon="@drawable/ic_baseline_home_24" />
 
     <item
-        android:id="@+id/heathcare"
+        android:id="@+id/events"
         android:icon="@drawable/ic_hc"
-        android:title="@string/health_care" />
-
-    <item
-        android:id="@+id/order"
-        android:icon="@drawable/cart"
-        android:title="@string/orders" />
+        android:title="Events" />
 
     <item
         android:id="@+id/profile"

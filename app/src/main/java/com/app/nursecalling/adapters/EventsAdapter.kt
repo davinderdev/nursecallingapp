@@ -14,10 +14,11 @@ import kotlinx.android.synthetic.main.card_layout.view.*
 class EventsAdapter(val eventsList: List<EventsModel>) : Adapter<EventsAdapter.EventsViewHolder>() {
     class EventsViewHolder(itemView: View) : ViewHolder(itemView) {
         fun bindItems(model: EventsModel){
-            itemView.titleTv.text = model.eventName
-            itemView.descriptionTv1.text = model.username
-            itemView.descriptionTv2.text = model.systemName
-            itemView.descriptionTv3.text = model.time
+            itemView.titleTv.text = model.systemName
+            itemView.descriptionTv1.text = model.address
+            itemView.descriptionTv2.text = model.eventName
+            itemView.eventId.text =model.id.toString();
+//            itemView.descriptionTv3.text = model.date.toString();
 
         }
 

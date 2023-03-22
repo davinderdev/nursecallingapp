@@ -1,4 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".activities.MainActivity">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_channelId"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:hint="Enter Channel Id"-->
+<!--        />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/logo"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:hint="Enter Password"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_Login"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/logo"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:text="Login"-->
+<!--        />-->
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_navigation_1"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:padding="4dp"-->
+<!--        android:scrollIndicators="bottom"-->
+<!--        app:menu="@menu/bottom_nav_menu"-->
+<!--        tools:targetApi="m" />-->
+<!--</RelativeLayout>-->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,16 +56,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:visibility="gone"
-        app:titleTextColor="@color/white" />
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -47,23 +87,39 @@
             android:textColor="@color/colorPrimary" />
 
     </LinearLayout>
-    <LinearLayout
+    <!-- Email field -->
+    <EditText
+        android:id="@+id/et_channelId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="12dp"
-        android:layout_marginVertical="14dp"
-        android:clipToPadding="false"
-        android:orientation="vertical"
-        android:padding="30dp"
-        >
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/eventsListView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="12dp"/>
-    </LinearLayout>
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter Channel Id"
+        android:inputType="textEmailAddress" />
 
+    <!-- Password field -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_channelId"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
 
+    <!-- Login button -->
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Login" />
     <LinearLayout
         android:layout_above="@+id/bottom_nav"
         android:id="@+id/layoutContainer"
@@ -75,7 +131,6 @@
 
 
     </LinearLayout>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_alignParentBottom="true"
@@ -86,5 +141,4 @@
         android:scrollIndicators="bottom"
         app:menu="@menu/bottom_nav_menu"
         tools:targetApi="m" />
-
 </RelativeLayout>

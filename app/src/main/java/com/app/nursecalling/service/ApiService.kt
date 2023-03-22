@@ -10,7 +10,7 @@ const val BASE_URL = "192.168.0.192/"
 interface ApiService {
 
     @GET(value = "AX.htm")
-    fun getEvents(@Query("A") Int: Int, @Query("B") password: Int):Call<String>
+    fun getEvents(@Query("A") channelId: String, @Query("B") password: String):Call<String>
 
 
 }
